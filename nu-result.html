@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NU Admission Result 2026 | National University Bangladesh</title>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Tiro+Bangla&family=Exo+2:wght@700;800;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --green: #006a4e;
+    --green-dark: #004d38;
+    --green-light: #e8f5f1;
+    --red: #c8102e;
+    --gold: #f4a900;
+    --gold-light: #fff8e6;
+    --bg: #f0f4f2;
+    --white: #ffffff;
+    --text: #1a2e25;
+    --muted: #5a7266;
+    --border: #cdddd7;
+    --shadow: 0 4px 24px rgba(0,106,78,0.10);
+    --radius: 18px;
+    --radius-sm: 10px;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Hind Siliguri', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+  }
+
+  /* ─── TOP BAR ─── */
+  .topbar {
+    background: var(--green-dark);
+    color: rgba(255,255,255,0.7);
+    font-size: 12px;
+    padding: 7px 0;
+    text-align: center;
+    letter-spacing: 0.3px;
+  }
+
+  /* ─── HEADER ─── */
+  header {
+    background: var(--green);
+    padding: 0;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.18);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .header-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .logo-circle {
+    width: 52px; height: 52px;
+    background: var(--white);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 18px; font-weight: 900;
+    color: var(--green);
+    flex-shrink: 0;
+    box-shadow: 0 0 0 3px rgba(255,255,255,0.25);
+  }
+  .header-text h1 {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    color: #fff;
+    line-height: 1.2;
+    letter-spacing: 0.5px;
+  }
+  .header-text p {
+    color: rgba(255,255,255,0.75);
+    font-size: 13px;
+    margin-top: 2px;
+  }
+  .live-badge {
+    margin-left: auto;
+    background: var(--red);
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 5px 13px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+  }
+  .live-dot {
+    width: 7px; height: 7px;
+    background: #fff;
+    border-radius: 50%;
+    animation: blink 1.2s infinite;
+  }
+  @keyframes blink {
+    0%,100% { opacity: 1; }
+    50% { opacity: 0.2; }
+  }
+
+  /* ─── MAIN ─── */
+  main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 28px 16px 48px;
+  }
+
+  /* ─── STATS CARDS ─── */
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+  .stat-card {
+    background: var(--white);
+    border-radius: var(--radius-sm);
+    padding: 16px 14px;
+    text-align: center;
+    box-shadow: var(--shadow);
+    border: 1.5px solid var(--border);
+    transition: transform 0.2s, box-shadow 0.2s;
+    animation: fadeUp 0.5s ease both;
+  }
+  .stat-card:nth-child(1) { animation-delay: 0.05s; }
+  .stat-card:nth-child(2) { animation-delay: 0.10s; }
+  .stat-card:nth-child(3) { animation-delay: 0.15s; }
+  .stat-card:nth-child(4) { animation-delay: 0.20s; }
+  .stat-card:nth-child(5) { animation-delay: 0.25s; }
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(14px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .stat-card:hover { transform: translateY(-3px); box-shadow: 0 8px 32px rgba(0,106,78,0.16); }
+  .stat-icon {
+    width: 38px; height: 38px;
+    background: var(--green-light);
+    border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    margin: 0 auto 10px;
+    color: var(--green);
+  }
+  .stat-icon svg { width: 20px; height: 20px; stroke: var(--green); fill: none; stroke-width: 2; }
+  .stat-label {
+    font-size: 11px;
+    color: var(--muted);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+  }
+  .stat-value {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--green-dark);
+  }
+
+  /* ─── PASSRATE ─── */
+  .passrate-card {
+    background: linear-gradient(135deg, var(--green), var(--green-dark));
+    color: #fff;
+    border-radius: var(--radius-sm);
+    padding: 16px 14px;
+    text-align: center;
+    box-shadow: 0 6px 24px rgba(0,106,78,0.35);
+    animation: fadeUp 0.5s 0.30s ease both;
+  }
+  .passrate-card .stat-label { color: rgba(255,255,255,0.7); }
+  .passrate-card .stat-value { color: #fff; font-size: 22px; }
+  .passrate-bar-bg {
+    background: rgba(255,255,255,0.25);
+    height: 8px;
+    border-radius: 10px;
+    margin-top: 10px;
+    overflow: hidden;
+  }
+  .passrate-bar-fill {
+    height: 100%;
+    background: var(--gold);
+    border-radius: 10px;
+    width: 0%;
+    transition: width 1.6s cubic-bezier(0.22,1,0.36,1);
+  }
+
+  /* ─── PORTAL CARD ─── */
+  .portal-card {
+    background: var(--white);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    border: 1.5px solid var(--border);
+    overflow: hidden;
+    animation: fadeUp 0.5s 0.35s ease both;
+  }
+  .portal-title {
+    background: linear-gradient(90deg, var(--green-light), #fff);
+    border-bottom: 1.5px solid var(--border);
+    padding: 18px 24px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .portal-title-icon {
+    width: 36px; height: 36px;
+    background: var(--green);
+    border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .portal-title-icon svg { width: 18px; height: 18px; stroke: #fff; fill: none; stroke-width: 2; }
+  .portal-title h2 {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 17px;
+    font-weight: 800;
+    color: var(--green-dark);
+  }
+  .portal-title p {
+    font-size: 12px;
+    color: var(--muted);
+    margin-top: 1px;
+  }
+
+  /* ─── TABS ─── */
+  .tabs-wrap {
+    padding: 20px 24px 0;
+  }
+  .tabs {
+    display: inline-flex;
+    background: var(--bg);
+    border: 1.5px solid var(--border);
+    border-radius: 50px;
+    padding: 4px;
+    gap: 4px;
+  }
+  .tab-btn {
+    border: none;
+    background: transparent;
+    color: var(--muted);
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 9px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.25s;
+    display: flex; align-items: center; gap: 7px;
+  }
+  .tab-btn svg { width: 15px; height: 15px; stroke: currentColor; fill: none; stroke-width: 2; }
+  .tab-btn:hover:not(.active) { color: var(--green); background: rgba(255,255,255,0.7); }
+  .tab-btn.active {
+    background: var(--green);
+    color: #fff;
+    box-shadow: 0 4px 16px rgba(0,106,78,0.3);
+  }
+
+  /* ─── TAB CONTENT ─── */
+  .tab-content { display: none; padding: 24px; }
+  .tab-content.active { display: block; animation: fadeUp 0.3s ease; }
+
+  /* ─── FORM ─── */
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+  @media (max-width: 560px) {
+    .form-row { grid-template-columns: 1fr; }
+  }
+  .form-group { margin-bottom: 0; }
+  .form-group label {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--green-dark);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+  }
+  .input-shell { position: relative; }
+  .input-icon {
+    position: absolute;
+    left: 14px; top: 50%;
+    transform: translateY(-50%);
+    width: 17px; height: 17px;
+    stroke: #94a3b8; stroke-width: 2; fill: none;
+    pointer-events: none;
+    transition: stroke 0.2s;
+  }
+  .input-shell input, .input-shell select {
+    width: 100%;
+    padding: 13px 16px 13px 42px;
+    border: 1.5px solid var(--border);
+    border-radius: 12px;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 14px;
+    color: var(--text);
+    background: var(--bg);
+    transition: border 0.2s, box-shadow 0.2s;
+    appearance: none;
+  }
+  .input-shell input:focus, .input-shell select:focus {
+    outline: none;
+    border-color: var(--green);
+    box-shadow: 0 0 0 3px rgba(0,106,78,0.12);
+    background: #fff;
+  }
+  .input-shell input:focus ~ .input-icon,
+  .input-shell select:focus ~ .input-icon { stroke: var(--green); }
+
+  .submit-btn {
+    width: 100%;
+    padding: 15px;
+    background: var(--green);
+    color: #fff;
+    border: none;
+    border-radius: 14px;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 15px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: all 0.25s;
+    display: flex; align-items: center; justify-content: center; gap: 8px;
+    box-shadow: 0 4px 16px rgba(0,106,78,0.3);
+    letter-spacing: 0.5px;
+    margin-top: 4px;
+  }
+  .submit-btn svg { width: 18px; height: 18px; stroke: #fff; fill: none; stroke-width: 2; }
+  .submit-btn:hover {
+    background: var(--green-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0,106,78,0.4);
+  }
+  .submit-btn:active { transform: translateY(0); }
+
+  /* ─── RESULT BOX ─── */
+  .result-box {
+    display: none;
+    margin-top: 20px;
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+    animation: fadeUp 0.35s ease;
+  }
+  .result-box.show { display: block; }
+
+  .result-header {
+    padding: 14px 20px;
+    display: flex; align-items: center; gap: 10px;
+    font-weight: 700;
+    font-size: 15px;
+  }
+  .result-header svg { width: 22px; height: 22px; flex-shrink: 0; }
+  .result-header.admitted {
+    background: #e8f5f1;
+    color: var(--green-dark);
+    border: 1.5px solid #b0ddd0;
+    border-bottom: none;
+    border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+  }
+  .result-header.not-admitted {
+    background: #fff0f0;
+    color: var(--red);
+    border: 1.5px solid #ffc5c5;
+    border-bottom: none;
+    border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+  }
+
+  .result-body {
+    padding: 18px 20px;
+    border: 1.5px solid;
+    border-top: none;
+    border-radius: 0 0 var(--radius-sm) var(--radius-sm);
+  }
+  .result-body.admitted { border-color: #b0ddd0; background: #f5fdf9; }
+  .result-body.not-admitted { border-color: #ffc5c5; background: #fffafa; }
+
+  .result-table { width: 100%; border-collapse: collapse; }
+  .result-table td {
+    padding: 8px 0;
+    font-size: 14px;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+  }
+  .result-table td:first-child { color: var(--muted); width: 40%; }
+  .result-table td:last-child { font-weight: 700; color: var(--text); }
+  .result-table tr:last-child td { border-bottom: none; }
+
+  .merit-badge {
+    display: inline-block;
+    background: var(--green);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 3px 12px;
+    border-radius: 50px;
+    margin-top: 2px;
+  }
+
+  /* ─── SMS SECTION ─── */
+  .sms-wrap {
+    background: var(--bg);
+    border: 1.5px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 22px;
+  }
+  .sms-title {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 15px;
+    font-weight: 800;
+    color: var(--green-dark);
+    margin-bottom: 14px;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .sms-title svg { width: 18px; height: 18px; stroke: var(--green); fill: none; stroke-width: 2; }
+  .sms-format-box {
+    background: var(--white);
+    border: 1.5px solid var(--border);
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin-bottom: 14px;
+  }
+  .sms-format-label {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+  }
+  .sms-code {
+    font-family: monospace;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--green-dark);
+    background: var(--green-light);
+    padding: 10px 16px;
+    border-radius: 8px;
+    display: inline-block;
+    letter-spacing: 1px;
+  }
+  .sms-to {
+    font-size: 14px;
+    color: var(--muted);
+    margin-top: 10px;
+  }
+  .sms-to strong { color: var(--green); font-size: 17px; }
+
+  /* ─── OFFICIAL LINKS ─── */
+  .links-section { margin-top: 24px; }
+  .links-title {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 15px;
+    font-weight: 800;
+    color: var(--green-dark);
+    margin-bottom: 12px;
+  }
+  .links-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+  }
+  .link-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 13px 16px;
+    background: var(--white);
+    border: 1.5px solid var(--border);
+    border-radius: 12px;
+    text-decoration: none;
+    color: var(--text);
+    font-size: 13px;
+    font-weight: 600;
+    transition: all 0.2s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  }
+  .link-btn svg { width: 18px; height: 18px; stroke: var(--green); fill: none; stroke-width: 2; flex-shrink: 0; }
+  .link-btn:hover {
+    background: var(--green-light);
+    border-color: var(--green);
+    color: var(--green-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0,106,78,0.12);
+  }
+  .link-arrow { margin-left: auto; font-size: 16px; opacity: 0.4; }
+
+  /* ─── TIMELINE ─── */
+  .timeline-section {
+    background: var(--white);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    border: 1.5px solid var(--border);
+    padding: 24px;
+    margin-top: 20px;
+    animation: fadeUp 0.5s 0.45s ease both;
+  }
+  .timeline-title {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--green-dark);
+    margin-bottom: 20px;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .tl-live-dot {
+    width: 9px; height: 9px;
+    background: var(--red);
+    border-radius: 50%;
+    animation: pulse 1.5s infinite;
+    flex-shrink: 0;
+  }
+  @keyframes pulse {
+    0%   { box-shadow: 0 0 0 0 rgba(200,16,46,0.4); }
+    70%  { box-shadow: 0 0 0 8px rgba(200,16,46,0); }
+    100% { box-shadow: 0 0 0 0 rgba(200,16,46,0); }
+  }
+  .timeline {
+    position: relative;
+    padding-left: 26px;
+  }
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 6px; top: 8px; bottom: 8px;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--green), var(--border));
+    border-radius: 2px;
+  }
+  .tl-item {
+    position: relative;
+    margin-bottom: 16px;
+    background: var(--bg);
+    border-radius: 12px;
+    padding: 13px 15px;
+    border: 1px solid var(--border);
+  }
+  .tl-item::before {
+    content: '';
+    position: absolute;
+    left: -22px; top: 18px;
+    width: 9px; height: 9px;
+    background: var(--green);
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 2px rgba(0,106,78,0.25);
+  }
+  .tl-item.highlight { background: var(--green-light); border-color: #b0ddd0; }
+  .tl-time {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--green);
+    background: rgba(0,106,78,0.1);
+    padding: 3px 10px;
+    border-radius: 50px;
+    display: inline-block;
+    margin-bottom: 6px;
+    letter-spacing: 0.3px;
+  }
+  .tl-text {
+    font-size: 13px;
+    color: var(--text);
+    line-height: 1.6;
+  }
+
+  /* ─── FAQ ─── */
+  .faq-section {
+    background: var(--white);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    border: 1.5px solid var(--border);
+    padding: 24px;
+    margin-top: 20px;
+    animation: fadeUp 0.5s 0.50s ease both;
+  }
+  .faq-title {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--green-dark);
+    margin-bottom: 18px;
+  }
+  .faq-item {
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  .faq-item:last-child { border-bottom: none; }
+  .faq-q {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 0;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text);
+    gap: 12px;
+    user-select: none;
+  }
+  .faq-q:hover { color: var(--green); }
+  .faq-arrow {
+    flex-shrink: 0;
+    width: 18px; height: 18px;
+    stroke: var(--muted); fill: none; stroke-width: 2.5;
+    transition: transform 0.25s;
+  }
+  .faq-item.open .faq-arrow { transform: rotate(180deg); stroke: var(--green); }
+  .faq-a {
+    display: none;
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.75;
+    padding-bottom: 14px;
+  }
+  .faq-item.open .faq-a { display: block; animation: fadeUp 0.2s ease; }
+
+  /* ─── FOOTER ─── */
+  footer {
+    background: var(--green-dark);
+    color: rgba(255,255,255,0.65);
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    margin-top: 12px;
+  }
+  footer a { color: rgba(255,255,255,0.85); text-decoration: none; }
+  footer a:hover { color: #fff; }
+
+  /* ─── LOADING ─── */
+  .spinner {
+    display: none;
+    width: 22px; height: 22px;
+    border: 3px solid rgba(255,255,255,0.4);
+    border-top-color: #fff;
+    border-radius: 50%;
+    animation: spin 0.7s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .submit-btn.loading .btn-text { display: none; }
+  .submit-btn.loading .spinner { display: block; }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  🇧🇩 জাতীয় বিশ্ববিদ্যালয়, বাংলাদেশ &nbsp;|&nbsp; সেশন: ২০২৫-২০২৬ &nbsp;|&nbsp; ১ম মেধাতালিকা প্রকাশিত
+</div>
+
+<header>
+  <div class="header-inner">
+    <div class="logo-circle">NU</div>
+    <div class="header-text">
+      <h1>National University</h1>
+      <p>Honours Admission Result Portal — 2026</p>
+    </div>
+    <div class="live-badge">
+      <div class="live-dot"></div>
+      LIVE
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- STATS -->
+  <div class="stats-grid">
+    <div class="stat-card">
+      <div class="stat-icon">
+        <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+      </div>
+      <div class="stat-label">সেশন</div>
+      <div class="stat-value">২০২৫-২৬</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-icon">
+        <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><path d="M8 14h.01M12 14h.01M16 14h.01"/></svg>
+      </div>
+      <div class="stat-label">পরীক্ষার তারিখ</div>
+      <div class="stat-value">২৫ এপ্রিল ২০২৬</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-icon">
+        <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+      </div>
+      <div class="stat-label">ফলাফল তারিখ</div>
+      <div class="stat-value">৩ মে ২০২৬</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-icon">
+        <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+      </div>
+      <div class="stat-label">মোট পরীক্ষার্থী</div>
+      <div class="stat-value" id="counter-candidates">0</div>
+    </div>
+    <div class="passrate-card">
+      <div class="stat-label">পাসের হার</div>
+      <div class="stat-value">80.36<span style="font-size:14px;opacity:0.8">%</span></div>
+      <div class="passrate-bar-bg">
+        <div class="passrate-bar-fill" id="passbar"></div>
+      </div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-icon">
+        <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      </div>
+      <div class="stat-label">মোট আসন</div>
+      <div class="stat-value" id="counter-seats">0</div>
+    </div>
+  </div>
+
+  <!-- PORTAL -->
+  <div class="portal-card">
+    <div class="portal-title">
+      <div class="portal-title-icon">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </div>
+      <div>
+        <h2>রেজাল্ট চেক করুন</h2>
+        <p>আপনার রোল নম্বর দিয়ে ফলাফল দেখুন</p>
+      </div>
+    </div>
+
+    <!-- TABS -->
+    <div class="tabs-wrap">
+      <div class="tabs">
+        <button class="tab-btn active" onclick="switchTab('online', this)">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          অনলাইনে দেখুন
+        </button>
+        <button class="tab-btn" onclick="switchTab('sms', this)">
+          <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          SMS-এ পান
+        </button>
+      </div>
+    </div>
+
+    <!-- ONLINE TAB -->
+    <div class="tab-content active" id="tab-online">
+      <div class="form-row">
+        <div class="form-group">
+          <label>রোল নম্বর</label>
+          <div class="input-shell">
+            <input type="text" id="rollInput" placeholder="আপনার রোল নম্বর লিখুন" maxlength="15">
+            <svg class="input-icon" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>রেজিস্ট্রেশন নম্বর</label>
+          <div class="input-shell">
+            <input type="text" id="regInput" placeholder="রেজিস্ট্রেশন নম্বর (ঐচ্ছিক)" maxlength="15">
+            <svg class="input-icon" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          </div>
+        </div>
+      </div>
+      <div class="form-group" style="margin-bottom:16px;">
+        <label>মেধাতালিকা</label>
+        <div class="input-shell">
+          <select id="meritSelect">
+            <option value="1st">১ম মেধাতালিকা (1st Merit List)</option>
+            <option value="2nd">২য় মেধাতালিকা (2nd Merit List)</option>
+            <option value="migration">মাইগ্রেশন / বিষয় পরিবর্তন</option>
+            <option value="quota">কোটা ফলাফল (Quota Result)</option>
+            <option value="release">রিলিজ স্লিপ (Release Slip)</option>
+          </select>
+          <svg class="input-icon" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </div>
+      </div>
+      <button class="submit-btn" onclick="checkResult()">
+        <span class="btn-text" style="display:flex;align-items:center;gap:8px;">
+          <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          ফলাফল দেখুন
+        </span>
+        <div class="spinner"></div>
+      </button>
+
+      <!-- RESULT -->
+      <div class="result-box" id="resultBox">
+        <div class="result-header admitted" id="resultHeader">
+          <svg viewBox="0 0 24 24" style="stroke:var(--green);fill:none;stroke-width:2;"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          <span id="resultStatus">ভর্তির জন্য নির্বাচিত হয়েছেন!</span>
+        </div>
+        <div class="result-body admitted" id="resultBody">
+          <table class="result-table">
+            <tr><td>নাম</td><td id="r-name">—</td></tr>
+            <tr><td>রোল নম্বর</td><td id="r-roll">—</td></tr>
+            <tr><td>কলেজ</td><td id="r-college">—</td></tr>
+            <tr><td>বিষয়</td><td id="r-subject">—</td></tr>
+            <tr><td>মেধাক্রম</td><td id="r-merit">—</td></tr>
+            <tr><td>স্ট্যাটাস</td><td><span class="merit-badge" id="r-badge">Selected</span></td></tr>
+          </table>
+        </div>
+      </div>
+
+      <!-- OFFICIAL LINK -->
+      <div class="links-section">
+        <div class="links-title">অফিসিয়াল ওয়েবসাইট</div>
+        <div class="links-grid">
+          <a href="https://admission.nu.edu.bd" target="_blank" class="link-btn">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            admission.nu.edu.bd
+            <span class="link-arrow">→</span>
+          </a>
+          <a href="https://www.nu.ac.bd/admissions" target="_blank" class="link-btn">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            www.nu.ac.bd/admissions
+            <span class="link-arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SMS TAB -->
+    <div class="tab-content" id="tab-sms">
+      <div class="sms-wrap">
+        <div class="sms-title">
+          <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          SMS-এ ফলাফল পান
+        </div>
+        <div class="sms-format-box">
+          <div class="sms-format-label">ফরম্যাট</div>
+          <div class="sms-code">NU&lt;space&gt;ATHN&lt;space&gt;ROLL</div>
+          <div class="sms-to">পাঠান: <strong>16222</strong> নম্বরে</div>
+        </div>
+        <div class="sms-format-box">
+          <div class="sms-format-label">উদাহরণ</div>
+          <div class="sms-code">NU ATHN 123456789</div>
+          <div class="sms-to" style="margin-top:8px;font-size:13px;">যেকোনো অপারেটর থেকে পাঠানো যাবে</div>
+        </div>
+
+        <div class="form-group" style="margin-bottom:16px;">
+          <label>আপনার রোল নম্বর দিন</label>
+          <div class="input-shell">
+            <input type="text" id="smsRollInput" placeholder="রোল নম্বর লিখুন..." maxlength="12">
+            <svg class="input-icon" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </div>
+        </div>
+        <div class="sms-wrap" id="smsPreview" style="background:#fff;padding:14px;margin-top:0;display:none;">
+          <div class="sms-format-label">আপনার SMS টেক্সট</div>
+          <div class="sms-code" id="smsText" style="margin-top:8px;display:block;">NU ATHN ...</div>
+          <div class="sms-to" style="margin-top:8px;">→ পাঠান <strong>16222</strong> নম্বরে</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TIMELINE -->
+  <div class="timeline-section">
+    <div class="timeline-title">
+      <div class="tl-live-dot"></div>
+      সর্বশেষ আপডেট
+    </div>
+    <div class="timeline">
+      <div class="tl-item highlight">
+        <div class="tl-time">৩ মে ২০২৬ — দুপুর ১২:০০</div>
+        <div class="tl-text">✅ <strong>১ম মেধাতালিকা প্রকাশিত হয়েছে।</strong> মোট ৪,৫৩,১৪৮ জন পরীক্ষার্থীর মধ্যে ৮০.৩৬% উত্তীর্ণ হয়েছেন।</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-time">২৫ এপ্রিল ২০২৬</div>
+        <div class="tl-text">ভর্তি পরীক্ষা সমাপ্ত হয়েছে। সারাদেশে একযোগে পরীক্ষা অনুষ্ঠিত হয়।</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-time">মার্চ — এপ্রিল ২০২৬</div>
+        <div class="tl-text">অনলাইনে ভর্তির আবেদন গ্রহণ সম্পন্ন। মোট আসন: ৪,৫২,৮৭৫।</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-time">পরবর্তী ধাপ (শীঘ্রই)</div>
+        <div class="tl-text">📝 ফাইনাল অ্যাডমিশন ফর্ম পূরণ করুন এবং নির্ধারিত সময়ের মধ্যে কলেজে ভর্তি সম্পন্ন করুন।</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <div class="faq-section">
+    <div class="faq-title">সাধারণ জিজ্ঞাসা (FAQ)</div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">
+        ১ম মেধাতালিকা কবে প্রকাশিত হয়েছে?
+        <svg class="faq-arrow" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+      </div>
+      <div class="faq-a">NU Honours Admission ১ম মেধাতালিকা ৩ মে ২০২৬ তারিখে প্রকাশিত হয়েছে।</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">
+        SMS-এ রেজাল্ট পাওয়ার ফরম্যাট কী?
+        <svg class="faq-arrow" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+      </div>
+      <div class="faq-a">NU ATHN [রোল নম্বর] লিখে ১৬২২২ নম্বরে SMS পাঠান। যেকোনো অপারেটর থেকে করা যাবে।</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">
+        মেধাতালিকায় নাম এলে কী করতে হবে?
+        <svg class="faq-arrow" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+      </div>
+      <div class="faq-a">দ্রুত অনলাইনে Final Admission Form পূরণ করুন এবং নির্ধারিত সময়সীমার মধ্যে কলেজে ভর্তি সম্পন্ন করুন।</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">
+        বিষয় পরিবর্তন কি করা সম্ভব?
+        <svg class="faq-arrow" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+      </div>
+      <div class="faq-a">হ্যাঁ, আসন ফাঁকা থাকলে Migration-এর জন্য আবেদন করতে পারবেন। Migration Result আলাদাভাবে প্রকাশিত হয়।</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">
+        অফিসিয়াল ওয়েবসাইট কোনটি?
+        <svg class="faq-arrow" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+      </div>
+      <div class="faq-a">অফিসিয়াল ওয়েবসাইট: www.nu.ac.bd/admissions অথবা admission.nu.edu.bd</div>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <p>© ২০২৬ National University, Gazipur, Bangladesh &nbsp;|&nbsp; 
+  <a href="https://www.nu.ac.bd" target="_blank">www.nu.ac.bd</a> &nbsp;|&nbsp;
+  Helpline: 16222</p>
+  <p style="margin-top:6px;opacity:0.6;font-size:11px;">এই পেজটি শুধুমাত্র তথ্যের জন্য। অফিসিয়াল ফলাফলের জন্য nu.ac.bd ভিজিট করুন।</p>
+</footer>
+
+<script>
+  // ─── Counter Animation ───
+  function animateCounter(el, target, duration = 1800) {
+    const start = Date.now();
+    const tick = () => {
+      const elapsed = Date.now() - start;
+      const progress = Math.min(elapsed / duration, 1);
+      const ease = 1 - Math.pow(1 - progress, 3);
+      el.textContent = Math.floor(ease * target).toLocaleString('bn-BD');
+      if (progress < 1) requestAnimationFrame(tick);
+    };
+    requestAnimationFrame(tick);
+  }
+
+  window.addEventListener('load', () => {
+    animateCounter(document.getElementById('counter-candidates'), 453148);
+    animateCounter(document.getElementById('counter-seats'), 452875);
+    setTimeout(() => {
+      document.getElementById('passbar').style.width = '80.36%';
+    }, 400);
+  });
+
+  // ─── Tab Switch ───
+  function switchTab(name, btn) {
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('tab-' + name).classList.add('active');
+  }
+
+  // ─── Result Checker (Demo) ───
+  const demoData = {
+    '12345678': { name: 'মোহাম্মদ রহিম', roll: '12345678', college: 'ঢাকা কলেজ, ঢাকা', subject: 'বাংলা', merit: '৪৫৬', admitted: true },
+    '98765432': { name: 'সুমাইয়া আক্তার', roll: '98765432', college: 'ইডেন মহিলা কলেজ', subject: 'ইতিহাস', merit: '৭৮৯', admitted: true },
+    '11111111': { admitted: false },
+  };
+
+  function checkResult() {
+    const roll = document.getElementById('rollInput').value.trim();
+    if (!roll) { alert('রোল নম্বর দিন!'); return; }
+
+    const btn = document.querySelector('.submit-btn');
+    btn.classList.add('loading');
+
+    setTimeout(() => {
+      btn.classList.remove('loading');
+      const box = document.getElementById('resultBox');
+      const header = document.getElementById('resultHeader');
+      const body = document.getElementById('resultBody');
+      box.classList.add('show');
+
+      const data = demoData[roll] || (Math.random() > 0.4 ? {
+        name: 'পরীক্ষার্থী ' + roll,
+        roll: roll,
+        college: 'সরকারি বি এল কলেজ, খুলনা',
+        subject: 'রাষ্ট্রবিজ্ঞান',
+        merit: Math.floor(Math.random() * 5000 + 100) + '',
+        admitted: true
+      } : { admitted: false });
+
+      if (data.admitted) {
+        header.className = 'result-header admitted';
+        body.className = 'result-body admitted';
+        document.getElementById('resultStatus').textContent = '🎉 আপনি ভর্তির জন্য নির্বাচিত হয়েছেন!';
+        document.getElementById('r-name').textContent = data.name;
+        document.getElementById('r-roll').textContent = data.roll;
+        document.getElementById('r-college').textContent = data.college;
+        document.getElementById('r-subject').textContent = data.subject;
+        document.getElementById('r-merit').textContent = data.merit;
+        document.getElementById('r-badge').textContent = 'নির্বাচিত ✓';
+        document.getElementById('r-badge').style.background = 'var(--green)';
+      } else {
+        header.className = 'result-header not-admitted';
+        body.className = 'result-body not-admitted';
+        document.getElementById('resultStatus').textContent = '❌ দুঃখিত, এই রোলে নির্বাচিত হননি।';
+        document.getElementById('r-name').textContent = '—';
+        document.getElementById('r-roll').textContent = roll;
+        document.getElementById('r-college').textContent = '—';
+        document.getElementById('r-subject').textContent = '—';
+        document.getElementById('r-merit').textContent = '—';
+        document.getElementById('r-badge').textContent = 'নির্বাচিত হননি';
+        document.getElementById('r-badge').style.background = 'var(--red)';
+      }
+
+      box.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }, 1200);
+  }
+
+  // ─── SMS Preview ───
+  document.getElementById('smsRollInput').addEventListener('input', function() {
+    const v = this.value.trim();
+    const preview = document.getElementById('smsPreview');
+    if (v) {
+      preview.style.display = 'block';
+      document.getElementById('smsText').textContent = 'NU ATHN ' + v;
+    } else {
+      preview.style.display = 'none';
+    }
+  });
+
+  // ─── FAQ Toggle ───
+  function toggleFaq(el) {
+    const item = el.parentElement;
+    item.classList.toggle('open');
+  }
+
+  // ─── Enter key ───
+  document.getElementById('rollInput').addEventListener('keydown', e => {
+    if (e.key === 'Enter') checkResult();
+  });
+</script>
+
+</body>
+</html>
